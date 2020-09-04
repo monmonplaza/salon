@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// BREAKPOINTS
+
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+$columns: 12;
+
+
+.container
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//container-sizing
+
+$breakpoint: ($sm-screen: 540px,
+    $md-screen: 720px,
+    $lg-screen: 960px,
+    $xl-screen: 1640px);
+
+@each $min-width,
+$max-width in $breakpoint {
+    @media (min-width: $min-width) {
+        .container {
+            max-width: $max-width;
+        }
+    }
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+$width: (sm: 576, md: 992, lg: 768, xl: 1200);
+
+@each $prefix,
+$size in $width {
+    @media screen and (min-width: $size + "px") {
+        @for $i from 1 through $columns {
+            .col-#{$prefix}-#{$i} {
+                flex: 0 0 100% / $columns * $i;
+                max-width: 100% / $columns * $i;
+            }
+        }
+    }
+}
+
+
+
+%column-style {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+$size-list: (sm, md, lg, xl);
+
+@each $size in $size-list {
+    @for $i from 1 through $columns {
+        .col-#{$size}-#{$i} {
+            @extend %column-style;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+* {
+    box-sizing: inherit;
+    // border: 1px solid red;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $primary-font;
+    line-height: 1.6;
+    color: $dark-color;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+}
+
+.lead {
+    font-family: $secondary-font;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.sublead {
+    font-family: $secondary-font;
+    font-size: 4rem;
+}
+
+.btn {
+    border: 1px solid $secondary-color;
+    padding: .6rem 2rem;
+    color: $light-color;
+    background-color: rgba($secondary-color, .7);
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}  
+
+.active-service {
+    display: block!important;  
+}  

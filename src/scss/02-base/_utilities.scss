@@ -1,0 +1,153 @@
+//MARGIN/margin
+$spaceamount: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamount {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .mb-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+
+
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
+
+.no {
+    &-padding {
+        padding: 0 !important;
+    }
+
+    &-margin {
+        margin: 0 !important;
+    }
+
+}
+
+
+
+
+//TEXT ALIGNMENT
+
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-justify {
+        text-align: justify;
+    }
+}
+
+// FLOATS
+
+.float {
+    &-left {
+        float: left;
+    }
+
+    &-right {
+        float: right;
+    }
+}
+
+.text {
+    &-primary {
+        color: $primary-color;
+    }
+
+    &-light {
+        color: $light-color;
+    }
+
+    &-dark {
+        color: $dark-color;
+    }
+
+    &-secondary {
+        color: $secondary-color;
+    }
+}
+
+
+.bg {
+    &-primary {
+        color: set-text-color($primary-color);
+        @include set-background($primary-color);
+    }
+
+    &-secondary {
+        color: set-text-color($secondary-color);
+        @include set-background($secondary-color);
+    }
+
+    &-light {
+        color: set-text-color($light-color);
+        @include set-background($light-color);
+    }
+
+    &-dark {
+        color: set-text-color($dark-color);
+        @include set-background($dark-color);
+    }
+
+    &-transparent {
+        color: $primary-color;
+        background: transparent;
+        border: 1px solid $primary-color;
+    }
+
+    &-gray {
+        color: set-text-color($gray-color);
+        @include set-background($gray-color);
+    }
+
+}
+
+.d {
+    &-flex {
+        display: flex;
+    }
+
+    &-inline-block {
+        display: inline-block
+    }
+
+    &-block {
+        display: block;
+    }
+}
+
+.clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table
+    }
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,56 @@
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+
+@mixin overlay($opacity, $img-path) {
+    background: linear-gradient(rgba(0, 0, 0, $opacity), rgba(0, 0, 0, $opacity)),
+        url($img-path);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin media-query($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+@mixin input($color) {
+    border: 1px solid $color;
+    padding: 5px;
+    outline: none;
+    border-radius: 30px;
+}
+
+@mixin btn($color) {
+    //display: inline-block;
+    margin: 5px;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: set-text-color($color);
+    text-decoration: none;
+    transition: .5s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color, 20);
+    }
+}
