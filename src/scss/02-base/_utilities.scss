@@ -88,6 +88,9 @@ $spaceamount: (1, 2, 3, 4, 5);
     &-secondary {
         color: $secondary-color;
     }
+    &-center {
+        text-align: center;
+    }
 }
 
 

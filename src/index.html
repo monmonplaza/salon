@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/main.css?cb=1599221389820">
+    <link rel="stylesheet" href="./css/main.css?cb=1599321271636">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"/>
     <title>Document</title>
 </head>
 
-<body>
-    <!-- HEADER START --> 
+<body>  
+    <!-- HEADER START -->   
     <header class="header">
         <div class="container">
             <div class="header__wrapper">   
                 <div class="branding">
                     <img src="./images/logo.png" alt="">
                 </div>
-                <nav>
+                <nav>  
                     <ul>
                         <li><a href="#">Home </a></li>
                         <li><a href="#">Services </a></li>
@@ -59,21 +59,25 @@
                     <div class="col-md-6">
                         <div class="services__box">
                             <div class="services__box__imgs">
-                                <div class="services__box__btn">
-                                    <img src="./images/service-1.jpg" alt="">
+                                <div class="services__box__btn" >
+                                    <img src="./images/service-1.jpg" alt="" id="service-1">
                                 </div>
                                 
-                                <div class="services__box__btn">
-                                    <img src="./images/service-2.jpg" alt="">
+                                <div class="services__box__btn" >
+                                    <img src="./images/service-2.jpg" alt="" id="service-2">
                                 </div>
-                                <div class="services__box__btn">
-                                    <img src="./images/service-3.jpg" alt="">
+                                <div class="services__box__btn" >
+                                    <img src="./images/service-3.jpg" alt="" id="service-3">
                                 </div>
-                                <div class="services__box__btn">
-                                    <img src="./images/service-4.jpg" alt="">
+                                <div class="services__box__btn" >
+                                    <img src="./images/service-4.jpg" alt="" id="service-4">
                                 </div>
-                                <div class="services__box__btn">
-                                    <img src="./images/service-1.jpg" alt="">
+                                <div class="services__box__btn" >
+                                    <img src="./images/service-1.jpg" alt="" id="service-5">
+                                </div>  
+
+                                <div class="services__box__btn" >
+                                    <img src="./images/service-1.jpg" alt="" id="service-6">
                                 </div>
                             </div>
                         </div>
@@ -82,7 +86,7 @@
                         <div class="services__box">
                             <div class="services__box__details">
                                 <h2 class="sublead text-secondary">Services we offer</h2>
-                                <div class="services__box__info active-service">
+                                <div class="services__box__info active-service" id="service-1-info">
                                     <h3>Nail Treatment</h3>
                                     <ul>
                                         <li>
@@ -100,7 +104,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="services__box__info">
+                                <div class="services__box__info" id="service-2-info">
                                     <h3>Service 2</h3>
                                     <ul>
                                         <li>
@@ -118,8 +122,62 @@
                                     </ul>
                                 </div>
 
-                                <div class="services__box__info">
+                                <div class="services__box__info" id="service-3-info">
                                     <h3>Service 3</h3>
+                                    <ul>
+                                        <li>
+                                            <h4>Subservice 1</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Subservice 2</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Subservice 3</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__box__info" id="service-4-info">
+                                    <h3>Service 4</h3>
+                                    <ul>
+                                        <li>
+                                            <h4>Subservice 1</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Subservice 2</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Subservice 3</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__box__info" id="service-5-info">
+                                    <h3>Service 5</h3>
+                                    <ul>
+                                        <li>
+                                            <h4>Subservice 1</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Subservice 2</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                        <li>
+                                            <h4>Subservice 3</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, tenetur?</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__box__info" id="service-6-info">
+                                    <h3>Service 6</h3>
                                     <ul>
                                         <li>
                                             <h4>Subservice 1</h4>
@@ -183,47 +241,142 @@
     </section>
     <!-- CTA END -->
 
+    <!-- TESTIMONIAL START-->
     <section class="testimonial">
         <div class="container">
                 <h2 class="sublead text-secondary">Testimonials</h2>
                 <h3>Learn what our customer says about our services</h3>
-
-            <div class="testimonial__slider">
-                <div class="testimonial__slider__item">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
-                </div>
-  
-                <div class="testimonial__slider__item">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
-                </div>
-  
-                <div class="testimonial__slider__item">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
+            <div class="slider__wrapper">
+                <div class="slider__container" >
+                    <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                        <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                            <img src="./images/prev.png" alt="">
+                        </li>
+                        <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                            <img src="./images/next.png" alt="">
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="testimonial__slider__item">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
-                </div>
+                <div class="testimonial__slider">
+                    <div class="testimonial__slider__item">
+                        <span>From Facebook</span>
+                        <h3>Ana Garcia</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
+                    </div>
 
-                <div class="testimonial__slider__item">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
-                </div>
+                    <div class="testimonial__slider__item">
+                        <span>From Facebook</span>
+                        <h3>Ana Garcia</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
+                    </div>
 
-                <div class="testimonial__slider__item">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
+                    <div class="testimonial__slider__item">
+                        <span>From Facebook</span>
+                        <h3>Ana Garcia</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
+                    </div>
+
+                    <div class="testimonial__slider__item">
+                        <span>From Facebook</span>
+                        <h3>Ana Garcia</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam libero sequi totam omnis.</p>
+                    </div>
+    
+                
                 </div>
             </div>
         </div>
     </section>
+    <!-- TESTIMONIAL END -->
+<!-- CONTACT START -->
+    <section class="contact">
+        <div class="container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.0982570861747!2d121.29928761483411!3d14.071374790141256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5d2cd946c37d%3A0xd168f8100c3ed3af!2sSM%20City%20San%20Pablo!5e0!3m2!1sen!2sph!4v1599230747781!5m2!1sen!2sph" frameborder="0" style="border:0;"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="contact__info">
+                    <ul>
+                        <li><img src="./images/icon-location.svg" alt=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Ipsam, adipisci.</p></li>
+                        <li><img src="./images/icon-clock.svg" alt=""><p>Monday-Saturday<br>9:00AM-8:00PM</p></li>
+                        <li><img src="./images/icon-phone.svg" alt=""><p>(032) 678 1234 / 0922 890 1234</p></li>
+                        <li><img src="./images/icon-mail.svg" alt=""><p>info@salonspan.com</p></li>
+                    </ul>
+                </div>
+            </div> 
+
+            <h3 class="sublead text-center">Contact Us</h3>
+            <p  class="text-center">We’re here to help and answer any question you might have. <br>
+                We look forward to hearing from you</p>
 
 
-    <script src="./js/all.js?cb=1599221389820"></script>
+            <div class="form">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label for="">Fullname</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" required>
+                        <label for="">Contact</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" required>
+                        <label for="" required>Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label for="">Subject</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <label for="">Message</label>
+                    </div>
+                    <input type="submit" class="btn" value="submit" >
+                    
+                </form>
+            </div>
+          
+        </div>
+    </section>
+    <!-- CONTACT END -->
+
+    <footer class="text-center">
+        <p>&copy; 2020 SpaSalon. All Right Reserved</p>
+    </footer>
+
+
+    <script src="./js/all.js?cb=1599321271636"></script>  
 </body>
 
 </html>  

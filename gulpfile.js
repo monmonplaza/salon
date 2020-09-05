@@ -52,7 +52,7 @@ function jsTask() {
         gulp
         .src(files.jsPath)
         .pipe(concat("all.js"))
-        // .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest(files.distJsPath))
     );
 }
