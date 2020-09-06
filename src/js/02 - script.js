@@ -42,8 +42,8 @@ var slider = tns({
     })
   }
 
-  //MENU
-
+  //MENUgit 
+  
   const toggleMenu = document.querySelector('.toggle-menu');
   const mobileMenu = document.querySelector('.mobile__menu')
   const closeMenu = document.querySelector('#menu-close')

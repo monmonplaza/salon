@@ -20,6 +20,11 @@
                 margin-bottom: .5rem;
             }
         }
+
+        .toggle-menu {
+            display: block;
+        }
+
     }  
 
     .mobile__menu {
@@ -144,75 +149,76 @@
            }
        }
    }    
-}
 
-.services {
-    &__wrapper {
-        padding: 0
-    }
-    &__box {
-        padding: 0;
-        &__imgs {
-            height: 35rem;
-            margin-bottom: 3rem;
-        }
-        h2 {
-            line-height: 1;
-            margin-bottom: 2rem;
-            
-        }
-    }
-}
 
-.about {
-    &__wrapper {
-        padding: 0;
-    }
-
-    &__details {
-        min-height: 86rem;
-        padding: 4rem 2rem;
-    }
-}
-
-.testimonial {
-    padding: 2rem 0;
-    min-height: 70vh;  
-    .slider {
+    .services {
         &__wrapper {
-            padding: 0 2rem;
-            margin-bottom: 25rem;
+            padding: 0
         }
-
-        &__container {
-            top: 90%;
-            .controls {
-                justify-content: flex-end;
-                li{
-                    margin-right: 1rem;
-                }
+        &__box {
+            padding: 0;
+            &__imgs {
+                height: 35rem;
+                margin-bottom: 3rem;
+            }
+            h2 {
+                line-height: 1;
+                margin-bottom: 2rem;
+                
             }
         }
     }
-   
-}
 
-.contact {
-    min-height: 170vh;
-    @include media-query(380px){
-        min-height: 200vh;
-    }
-    &__info{
-        padding: 2rem;
-    }
-    &__info ul {
-        flex-wrap: wrap;
-        li {
-            margin-bottom: 1rem;
+    .about {
+        &__wrapper {
+            padding: 0;
+        }
+
+        &__details {
+            min-height: 86rem;
+            padding: 4rem 2rem;
         }
     }
-    h3 {
-        margin-top: 5rem;
+
+    .testimonial {
+        padding: 2rem 0;
+        min-height: 70vh;  
+        .slider {
+            &__wrapper {
+                padding: 0 2rem;
+                margin-bottom: 25rem;
+            }
+
+            &__container {
+                top: 90%;
+                .controls {
+                    justify-content: flex-end;
+                    li{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    
     }
+
+    .contact {
+        min-height: 170vh;
+        @include media-query(380px){
+            min-height: 200vh;
+        }
+        &__info{
+            padding: 2rem;
+        }
+        &__info ul {
+            flex-wrap: wrap;
+            li {
+                margin-bottom: 1rem;
+            }
+        }
+        h3 {
+            margin-top: 5rem;
+        }
+    }
+
 }
-  
