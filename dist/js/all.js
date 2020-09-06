@@ -4,7 +4,7 @@ var tns=function(){var t=window,Ai=t.requestAnimationFrame||t.webkitRequestAnima
 var slider = tns({
     container: '.testimonial__slider',
     loop: true,
-    items: 3,  
+    items: 1,  
     // slideBy: 'page',
     nav: false,
     gutter: 50,
@@ -12,15 +12,16 @@ var slider = tns({
     // mouseDrag: true,
     // lazyload: true,
     controlsContainer: "#customize-controls",
-    // responsive: {
-    //     640: {
-    //         items: 2,
-    //     },
+    responsive: {
+        "415": {
+            items: 3,
+        },
         
     //     768: {
     //         items: 3,
     //     }
     // }
+      }
   });
 
 
@@ -43,3 +44,23 @@ var slider = tns({
       info.classList.remove('active-service')
     })
   }
+
+  //MENU
+
+  const toggleMenu = document.querySelector('.toggle-menu');
+  const mobileMenu = document.querySelector('.mobile__menu')
+  const closeMenu = document.querySelector('#menu-close')
+  
+  
+  toggleMenu.addEventListener('click', () => {
+    mobileMenu.style.right = 0;
+    
+  }) 
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.style.right = -100 + '%';
+  
+  })
+
+
+
